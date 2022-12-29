@@ -1,0 +1,10 @@
+.footer {
+  background-color: #343a40;
+  /* position: absolute; */
+  padding: 30px;
+  bottom: 0;
+}
+
+.footer-text {
+  color: white;
+}
