@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { HeroesService } from 'src/app/services/heroes.service';
 
 @Component({
@@ -9,11 +10,16 @@ import { HeroesService } from 'src/app/services/heroes.service';
 export class HeroesComponent {
 
 
-    constructor( public HeroeService : HeroesService ){
+    constructor( public HeroeService : HeroesService,
+                 private router : Router ){
 
     }
 
 
+
+    verHeroe( id : number | string ) {
+        this.router.navigateByUrl(`heroe/${id}`);
+    }
 
 
 }

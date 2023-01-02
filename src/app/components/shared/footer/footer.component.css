@@ -1,8 +1,11 @@
 .footer {
   background-color: #343a40;
   /* position: absolute; */
+  align-self: end;
+  align-items: flex-end;
   padding: 30px;
   bottom: 0;
+  margin-top: 200px;
 }
 
 .footer-text {

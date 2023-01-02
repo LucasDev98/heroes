@@ -1,0 +1,17 @@
+<h1 class="text-center">Buscando: {{ term }}</h1>
+<div *ngIf="this.heroes.length == 0" class="alert alert-danger" role="alert">
+    {{term}} no fue encontrado.
+</div>
+
+<h3 class="text-center">Heroes de Marvel y DC</h3>
+<div class="card-columns mt-3 animated animated fadeIn">
+    <div class="card" *ngFor="let heroe of this.heroes; let i = index;">
+      <img class="card-img-top" [src]="heroe.img" alt="imagen heroe">
+      <div class="card-body">
+        <h5 class="card-title">{{ heroe.nombre }} {{ heroe.id }} </h5>
+        <p class="card-text">{{ heroe.bio  }}</p>
+        <p class="card-text text-center"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+        <button class="btn btn-primary btn-block" (click)="verHeroe( this.heroe.id)" >Ver Heroe</button>
+      </div>
+    </div>
+</div>
