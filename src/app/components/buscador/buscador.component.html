@@ -11,7 +11,7 @@
         <h5 class="card-title">{{ heroe.nombre }} {{ heroe.id }} </h5>
         <p class="card-text">{{ heroe.bio  }}</p>
         <p class="card-text text-center"><small class="text-muted">{{ heroe.aparicion }}</small></p>
-        <button class="btn btn-primary btn-block" (click)="verHeroe( this.heroe.id)" >Ver Heroe</button>
+        <button class="btn btn-primary btn-block" (click)="verHeroe( heroe.id )" >Ver Heroe</button>
       </div>
     </div>
 </div>
